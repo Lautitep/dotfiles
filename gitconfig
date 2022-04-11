@@ -52,3 +52,6 @@
 
 [init]
   defaultBranch = master
+[user]
+	email = lau.petit0@gmail.com
+	name = Laura Petit
