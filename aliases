@@ -7,3 +7,54 @@ alias serve='ruby -run -e httpd . -p 8000' # Or python -m SimpleHTTPServer :)
 
 # NOTE: On Q3 2021, Le Wagon decided to change the Web Dev curriculum default text editor
 alias stt="echo 'Launching VS Code instead of Sublime Text... (cf ~/.aliases)' && code ."
+
+# git
+alias gs="git status"
+alias gd="git diff"
+alias gdc="git diff --cached"
+alias ga="git add -p"
+alias gim="git commit -m"
+alias gimn="git commit -n -m"
+alias gam="git commit -am"
+alias gl="git pull --rebase"
+alias gp="git push origin"
+alias gcob="gco -b"
+alias glog="git log --pretty=oneline"
+alias guncommit="git reset --soft HEAD\^"
+alias gunadd="git reset -- ."
+alias gb="git branch"
+alias gbdel="git branch | egrep -v '^[ *]*(master|develop)$' | xargs git branch -d"
+alias gimn="git commit --no-verify -m"
+
+# git for bare repo .cfg
+alias cgs="config status"
+alias cgim="config commit -m"
+
+# python
+alias pip=pip3
+alias mkvenv="virtualenv -p python3.7 venv37"
+alias avenv=". venv37/bin/activate"
+
+# navigation shortcuts
+alias dl="cd ~/Downloads"
+alias ll="ls -lah"
+
+# spell checker
+alias csp="codespell --skip='.git,venv,*/**/venv,target,*/**/target,build,*/**/build,dist,*/**/dist,*.pyc,*.wav,*.snips,*.crfsuite,*.fst,*.zip,*.gz,*.vanilla,*.so,*.bin,*.lock,*.jar,*.raw,*.png,*.jpg,*.jpeg,*.gif,*.DS_Store'"
+
+# zsh
+alias ohmyzsh="atom ~/.oh-my-zsh"
+alias zshconfig="atom ~/.zshrc"
+
+# print each PATH entry on a separate line
+alias path='echo -e ${PATH//:/\\n}'
+
+# show/hide hidden files in Finder
+alias show="defaults write com.apple.finder AppleShowAllFiles -bool true && killall Finder"
+alias hide="defaults write com.apple.finder AppleShowAllFiles -bool false && killall Finder"
+
+# app shortcuts
+alias subl="/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl"
+alias pycharm="/Applications/PyCharm\ CE.app/Contents/MacOS/pycharm"
+alias openx="open *.xcworkspace"
+alias opena="open -a /Applications/Android\ Studio.app"
